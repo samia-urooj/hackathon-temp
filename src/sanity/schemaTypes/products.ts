@@ -10,6 +10,7 @@ export const productSchema = defineType({
       title: "Product Title",
       type: "string",
     },
+   
     {
       name: "price",
       title: "Price",
