@@ -26,3 +26,6 @@
 ![](public/image/ss-1.png)
 ## Cart page
 ![](public/image/ss-4.png)
+
+##  View the Hackathon Report (PDF)
+[📄 View the Hackathon Report (PDF)](docs/hackathon-report.pdf)
