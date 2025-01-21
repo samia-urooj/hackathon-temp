@@ -1,7 +1,7 @@
 "use client"
 
 import { sanityFetch } from "@/sanity/lib/fetch"
-import { allProducts, fourProducts } from "@/sanity/lib/queries"
+import {  fourProducts } from "@/sanity/lib/queries"
 import Hero from "./components/Hero"
 import Feature from "./featuredProducts/page"
 import Link from "next/link"

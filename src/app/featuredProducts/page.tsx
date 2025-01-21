@@ -1,4 +1,4 @@
-import Link from "next/link"
+
 type Product={
     id:number,
     title:string,
