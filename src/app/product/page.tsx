@@ -4,7 +4,7 @@ import { allProducts } from "@/sanity/lib/queries"
 import Link from "next/link"
 import { useContext } from "react"
 import CartContext from "../context"
-import { Product } from "@/sanity/lib/types"
+
 
 type Product = {
   _id:string,
@@ -39,8 +39,8 @@ export default async function Card(){
             <h1 className="text-xl font-bold my-2">{product.title}</h1>
            
             <h1 className="text-lg my-2">${product.price}</h1>
+
             <ProductPageClient product={product} />
-            {/* <button className="w-[130px] rounded-xl bg-blue-400 text-black hover:bg-blue-600">Add to cart</button> */}
              <Link href={`/product/${product._id}`}>
 
             <h1 className="text-blue-400 text-center my-4 hover:text-blue-600"><u>View details</u></h1>
@@ -82,7 +82,7 @@ function ProductPageClient({ product }: { product: Product }) {
     <div className="flex justify-center">
     <button onClick={() => {
 if (obj?.add) {
-  obj.add({ title: product.title, image: product.imageUrl, price: product.price });
+  obj.add({ title: product.title, imageUrl : product.imageUrl, price: product.price });
 } else {
   console.error("add function is not defined in CartContext");
 }

@@ -1,7 +1,7 @@
 "use client"
 import CartContext from "../context";
 import { useContext } from "react";
-import Link from "next/link";
+
 
 export default function Cart(){
 

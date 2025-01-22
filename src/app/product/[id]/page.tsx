@@ -3,7 +3,7 @@ import CartContext from "@/app/context"
 import CartProvider from "@/app/cartProvider"
 import { useContext } from "react"
 import { sanityFetch } from "@/sanity/lib/fetch"
-import { Product } from "@/sanity/lib/types" 
+import { Product } from "@/sanity/lib/type" 
 import { productQuery } from "@/sanity/lib/queries"
 
 export default async function ProductPage({ params }: { params: { id: string } }) {
@@ -22,9 +22,9 @@ export default async function ProductPage({ params }: { params: { id: string } }
         <p className="sm:text-lg text-sm text-left font-semibold">${product.price}</p>
 
  
-<CartProvider>
+
         <ProductPageClient product={product} />
-</CartProvider>
+
 
 
          <p className="text-sm text-left text-gray-600">Tags: {product.tags.join(", ")}</p>
@@ -44,7 +44,7 @@ function ProductPageClient({ product }: { product: Product }) {
     <div className="flex justify-start">
     <button onClick={() => {
 if (obj?.add) {
-  obj.add({ title: product.title, image: product.imageUrl, price: product.price });
+  obj.add({ title: product.title, imageUrl : product.imageUrl, price: product.price });
 } else {
   console.error("add function is not defined in CartContext");
 }

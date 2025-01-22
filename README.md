@@ -22,6 +22,8 @@
 ![](public/image/ss-3.png)
 ## Single product dynamic page 
 ![](public/image/ss-2.png)
+## Add to cart functionality
+![](public/image/ss-5.png)
 ## Code of dynamic Product detail page
 ![](public/image/ss-1.png)
 ## Cart page
